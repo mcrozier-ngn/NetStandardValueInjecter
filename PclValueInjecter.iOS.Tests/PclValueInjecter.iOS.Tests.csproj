@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DEC63BB1-A8D2-4467-9A68-B48F774D1C35}</ProjectGuid>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>PclValueInjecter.iOS.Tests</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>PclValueInjecteriOSTests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <BuildIpa>True</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\PclValueInjecter.Tests\AutomapperSimulationTest.cs">
+      <Link>Tests\AutomapperSimulationTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\BelitreTest.cs">
+      <Link>Tests\BelitreTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\CloneTests.cs">
+      <Link>Tests\CloneTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\Cloning.cs">
+      <Link>Tests\Cloning.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\CollectionsTest.cs">
+      <Link>Tests\CollectionsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\DanRyanIDataReaderTests.cs">
+      <Link>Tests\DanRyanIDataReaderTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\DescriptorToolsTest.cs">
+      <Link>Tests\DescriptorToolsTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\EnumInjectionsTests.cs">
+      <Link>Tests\EnumInjectionsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\ExactValueInjectionTests.cs">
+      <Link>Tests\ExactValueInjectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\ExtensionsTests.cs">
+      <Link>Tests\ExtensionsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\FlatLoopValueInjectionTests.cs">
+      <Link>Tests\FlatLoopValueInjectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\FlatteningTest.cs">
+      <Link>Tests\FlatteningTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\JohnLandheer.cs">
+      <Link>Tests\JohnLandheer.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\KnownSourceValueInjectionTest.cs">
+      <Link>Tests\KnownSourceValueInjectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\KnownTargetValueInjectionTest.cs">
+      <Link>Tests\KnownTargetValueInjectionTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\KohanTests.cs">
+      <Link>Tests\KohanTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\LoopValueInjectionTests.cs">
+      <Link>Tests\LoopValueInjectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\MapperTests.cs">
+      <Link>Tests\MapperTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\Noemata.cs">
+      <Link>Tests\Noemata.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\NullableInjectionsTests.cs">
+      <Link>Tests\NullableInjectionsTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\PrefixedValueInjectionTests.cs">
+      <Link>Tests\PrefixedValueInjectionTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\PropertyInfosStorageTests.cs">
+      <Link>Tests\PropertyInfosStorageTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\QrowTest.cs">
+      <Link>Tests\QrowTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\SixFootUnderTest.cs">
+      <Link>Tests\SixFootUnderTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\StepByStep.cs">
+      <Link>Tests\StepByStep.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\Stuff.cs">
+      <Link>Tests\Stuff.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\TestingTools.cs">
+      <Link>Tests\TestingTools.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\TrimTests.cs">
+      <Link>Tests\TrimTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\TunnelierTests.cs">
+      <Link>Tests\TunnelierTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\UberFlatterTests.cs">
+      <Link>Tests\UberFlatterTests.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\UberTest.cs">
+      <Link>Tests\UberTest.cs</Link>
+    </Compile>
+    <Compile Include="..\PclValueInjecter.Tests\ValueInjecterTests.cs">
+      <Link>Tests\ValueInjecterTests.cs</Link>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Default.png" />
+    <BundleResource Include="Resources\Default@2x.png" />
+    <BundleResource Include="Resources\Default-568h@2x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoTouch.NUnitLite" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PclValueInjecter\PclValueInjecter.csproj">
+      <Project>{581e675e-c6bf-41d0-9b87-3cd30256bad4}</Project>
+      <Name>PclValueInjecter</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+</Project>
