@@ -174,5 +174,4 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 *.userprefs
-/.vs/PclValueInjecter/v15/Server/sqlite3
 /.vs/NetStandardValueInjecter/v15/Server/sqlite3

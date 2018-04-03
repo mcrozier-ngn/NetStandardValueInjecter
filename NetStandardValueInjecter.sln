@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandardValueInjecter.iOS.Tests", "PclValueInjecter.iOS.Tests\NetStandardValueInjecter.iOS.Tests.csproj", "{DEC63BB1-A8D2-4467-9A68-B48F774D1C35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandardValueInjecter.iOS.Tests", "NetStandardValueInjecter.iOS.Tests\NetStandardValueInjecter.iOS.Tests.csproj", "{DEC63BB1-A8D2-4467-9A68-B48F774D1C35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandardValueInjecter.Android.Tests", "PclValueInjecter.Android.Tests\NetStandardValueInjecter.Android.Tests.csproj", "{8A88EE39-8C14-4C3C-B209-8F0BA35F5384}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetStandardValueInjecter.Android.Tests", "NetStandardValueInjecter.Android.Tests\NetStandardValueInjecter.Android.Tests.csproj", "{8A88EE39-8C14-4C3C-B209-8F0BA35F5384}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Xamarin Based Tests", "Xamarin Based Tests", "{783C2128-8A8E-4E40-BBAB-F14D77CB3A73}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardValueInjecter", "PclValueInjecter.Std\NetStandardValueInjecter.csproj", "{6D890246-6DA0-4EAE-B8DF-979AF754357B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardValueInjecter", "NetStandardValueInjecter\NetStandardValueInjecter.csproj", "{6D890246-6DA0-4EAE-B8DF-979AF754357B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardValueInjecter.Tests", "PclValueInjecter.Std.Tests\NetStandardValueInjecter.Tests.csproj", "{0FB0FE4E-9282-4C73-94FC-1AAA5D778577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetStandardValueInjecter.Tests", "NetStandardValueInjecter.Tests\NetStandardValueInjecter.Tests.csproj", "{0FB0FE4E-9282-4C73-94FC-1AAA5D778577}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -237,6 +237,6 @@ Global
 		SolutionGuid = {9FC707CC-FF50-49BC-8D27-07FF94FD4162}
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = PclValueInjecter\PclValueInjecter.csproj
+		StartupItem = NetStandardValueInjecter\NetStandardValueInjecter.csproj
 	EndGlobalSection
 EndGlobal
