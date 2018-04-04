@@ -27,10 +27,10 @@ namespace Xciles.NetStandardValueInjecter.Tests
 
             var e2 = new Entity();
             e2.InjectFrom<IntToEnum>(dto);
-            Assert.Equal(dto.Color, 2);
-            Assert.Equal(dto.Color2, 1);
-            Assert.Equal(dto.Mood, 2);
-            Assert.Equal(dto.Mood2, 3);
+            Assert.Equal(2, dto.Color);
+            Assert.Equal(1, dto.Color2);
+            Assert.Equal(2, dto.Mood);
+            Assert.Equal(3, dto.Mood2);
         }
 
         public enum Colors

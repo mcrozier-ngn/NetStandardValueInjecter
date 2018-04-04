@@ -43,7 +43,7 @@ namespace Xciles.NetStandardValueInjecter.Tests
             Assert.Equal(9, c.Father.Id);
             Assert.Equal(5, c.Brother.Id);
             Assert.Equal(7, c.Sister.Id);
-            Assert.Equal(null, c.Sister2);
+            Assert.Null(c.Sister2);
         }
 
         public class Entity
