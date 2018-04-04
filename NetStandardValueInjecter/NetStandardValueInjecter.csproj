@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageId>NetStandardValueInjecter.NetStandard</PackageId>
+    <PackageId>NetStandardValueInjecter</PackageId>
     <Authors>Martin Crozier</Authors>
-    <Product>NetStandardValueInjecter.NetStandard</Product>
+    <Product>NetStandardValueInjecter</Product>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Description>.Net Standard port of the original Xciles PclValueInjecter (based upon ValueInjecter):
 
@@ -13,6 +13,15 @@ https://github.com/Xciles/PclValueInjecter</Description>
     <PackageLicenseUrl>http://valueinjecter.codeplex.com/license</PackageLicenseUrl>
     <Company>N/A</Company>
     <PackageTags>value injecter, injector, pcl, netstandard</PackageTags>
+    <PackageProjectUrl>https://github.com/mcrozier-ngn/NetStandardValueInjecter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/mcrozier-ngn/NetStandardValueInjecter</RepositoryUrl>
+    <RepositoryType>Git</RepositoryType>
+    <Version>1.0.1</Version>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
   </PropertyGroup>
 
 </Project>
